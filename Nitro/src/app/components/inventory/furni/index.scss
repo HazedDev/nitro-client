@@ -1,0 +1,93 @@
+.nitro-inventory-furni-component {
+    width: 100%;
+
+    .grid-container {
+        position: relative;
+        background: rgba($light, 1);
+        height: 100%;
+        width: 100%;
+        padding: $card-spacer-y $card-spacer-x;
+
+        .grid-items {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: flex-start;
+            width: 100%;
+            height: 180px;
+            overflow: scroll;
+    
+            .item-detail {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                margin: 5px 5px 0 0;
+                width: calc(1 / 6 * 100% - (1 - 1 / 6) * 5px);
+                height: 40px;
+                box-sizing: border-box;
+                background: $destiny;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-origin: content-box;
+                // background-image: url('../../../../assets/images/icons/loading-icon.png');
+                border-radius: 3px;
+                overflow: hidden;
+    
+                &:nth-child(6n) {
+                    margin-right: 0;
+                }
+    
+                &:hover,
+                &.active {
+                    -webkit-box-shadow: inset 0px 0px 0px 2px #fff;
+                    -moz-box-shadow: inset 0px 0px 0px 2px #fff;
+                    box-shadow: inset 0px 0px 0px 2px #fff;
+                }
+    
+                &.unseen {
+                    background-color: rgba($green, 1);
+                }
+            
+                .badge {
+                    position: absolute;
+                    padding: 2px;
+                    font-size: 11px;
+                    top: 3px;
+                    left: 3px;
+                }
+            }
+    
+            &::after {
+                content: "";
+                flex: auto;
+            }
+        }
+    }
+
+    .furni-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: $card-spacer-y;
+
+        .room-previewer {
+            min-width: 170px;
+            max-width: 170px;
+            min-height: 130px;
+            max-height: 130px;
+        }
+
+        .container-info {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .room-previewer {
+        min-width: 170px;
+        max-width: 170px;
+        min-height: 130px;
+        max-height: 130px;
+    }
+}

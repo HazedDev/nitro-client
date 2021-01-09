@@ -1,0 +1,19 @@
+.nitro-purse-component {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 20px;
+    width: 100%;
+    z-index: 300;
+    pointer-events: none;
+
+    .currencies-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: rgba($destiny, 1);
+        padding: $card-spacer-y $card-spacer-x;
+    }
+}
+
+@import './credits';

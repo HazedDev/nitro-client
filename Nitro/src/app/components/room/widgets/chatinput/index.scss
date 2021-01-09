@@ -1,0 +1,46 @@
+.nitro-room-chatinput-component {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 30px;
+    pointer-events: none;
+
+    .chatinput-container {
+        position: relative;
+        width: 500px;
+        height: 45px;
+        border-radius: 10px;
+        border: 3px solid rgb(0, 0, 0);
+        background: #EDEDED;
+        pointer-events: all;
+
+        .chat-input {
+            width: calc(100% - 25px);
+            height: 100%;
+            font-size: 18px;
+            padding: 0 10px;
+            outline: 0;
+            border: 0;
+            position: relative;
+            background: transparent;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 98%;
+            height: 5px;
+            border-radius: 5px;
+            top: 3px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            z-index: 1;
+        }
+    }
+}
+
+@import './styleselector';

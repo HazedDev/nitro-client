@@ -1,0 +1,38 @@
+.nitro-toast-confirm-purchase-component {
+
+    .loading-overlay {
+        background-color: rgba($light, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
+
+    .product-preview {
+        background-color: rgba($light, 1);
+        min-width: 120px;
+        min-height: 150px;
+        max-width: 120px;
+        max-height: 150px;
+        margin-right: $card-spacer-y;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .offer-name {
+
+    }
+
+    .offer-quantity {
+
+    }
+
+    .offer-price {
+        
+    }
+}

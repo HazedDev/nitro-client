@@ -1,0 +1,40 @@
+.nitro-room-infostand-bot-component {
+    visibility: hidden;
+
+    .card {
+
+        .card-body {
+
+            .body-image {
+                // background-image: url('../../../../../../assets/images/infostand/bot_background.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 3px;
+                width: 68px;
+
+                img {
+                    position: relative;
+                    bottom: 10px;
+                }
+            }
+
+            span {
+
+                &.motto {
+                    font-size: 12px;
+                }
+
+                &.owner {
+                    font-size: 12px;
+                }
+            }
+
+            .badge-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+            }
+        }
+    }
+}

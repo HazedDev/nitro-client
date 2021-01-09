@@ -1,0 +1,69 @@
+.nitro-loading-component {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+
+	.splash {
+		background: url('../../../../assets/images/loading/stack.png') no-repeat;
+		width: 490px;
+		height: 434px;
+
+		.photo {
+			position: relative;
+			height: 320px;
+			width: 320px;
+			left: 95px;
+			top: 50px;
+			background: url('../../../../assets/images/loading/photo.png') no-repeat;
+		}
+
+		.frame {
+			display: none;
+			position: relative;
+			// background: url('../../../../assets/images/loading/frame.png') no-repeat;
+			height: 500px;
+			width: 434px;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	.text {
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		font-size: 28px;
+	}
+
+	.progress-container {
+
+        .loading-bar {
+            width: 400px;
+            background-color: black;
+            border-radius: 2px;
+            margin: 0 auto;
+            border: 1px solid white;
+            box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 1);
+            padding: 4px;
+            margin-bottom: 20px;
+
+            .bar {
+                background-image: -webkit-linear-gradient(bottom, #8CA1AD 50%, #BACAD3 50%);
+                display: block;
+                height: 20px;
+                width: 0%;
+                transition: width 1s;
+            }
+        }
+
+        .percent {
+            font-weight: 600;
+            text-align: center;
+            display: block;
+            color: #8D8E8E;
+        }
+	}
+}

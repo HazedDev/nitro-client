@@ -1,0 +1,51 @@
+.nitro-room-avatarinfo-component {
+    
+    .context-menu {
+        position: absolute;
+
+        .card {
+            align-items: center;
+            z-index: 301;
+
+            .card-header {
+                padding: 5px 15px;
+                align-items: center;
+                justify-content: center;
+
+                .header-title {
+                    font-size: 14px;
+                }
+            }
+
+            .card-body {
+                padding: 5px 0;
+                width: 100%;
+
+                .list-group {
+                    
+                    .list-group-item {
+                        padding: 3px 10px;
+                        font-weight: 300;
+                        font-size: 12px;
+                        text-align: center;
+                        width: 100%;
+
+                        &:hover {
+                            background: rgba($light, 1);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .card-pointer {
+                position: absolute;
+                top: 100%;
+                width: 0;
+                border-top: 8px solid $card-bg;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+            }
+        }
+    }
+}

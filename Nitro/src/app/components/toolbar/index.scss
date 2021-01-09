@@ -1,0 +1,57 @@
+.nitro-toolbar-component {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    .card {
+        width: 80px;
+        max-width: 80px;
+        align-items: center;
+        z-index: 400;
+
+        .card-body {
+
+            .list-group {
+                align-items: center;
+
+                .list-group-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    .icon {
+                        position: relative;
+                    }
+
+                    &:active {
+                        -webkit-transform: translate(0, 1px);
+                        transform: translate(0, 1px);
+                    }
+
+                    &.avatar-image {
+                        width: 75px;
+                        height: 70px;
+                        overflow: hidden;
+
+                        img {
+                            position: relative;
+                            top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.toolbar-icon-animation {
+    position: absolute;
+    object-fit: cover;
+    height: auto;
+    width: auto;
+    max-width: 120px;
+    max-height: 150px;
+    z-index: 500;
+    filter: drop-shadow(2px 1px 0 rgba($white, 1)) drop-shadow(-2px 1px 0 rgba($white, 1)) drop-shadow(0 -2px 0 rgba($white, 1));
+}

@@ -1,0 +1,24 @@
+<div [@animation]="animation" class="card nitro-alert nitro-toast-confirm-purchase-component" [draggable] dragHandle=".card-header" [style.display]="state.value === 'inactive' ? 'none' : ''">
+    <div *ngIf="isLoading" class="loading-overlay"></div>
+    <div class="card-header">
+        <div class="header-title">{{ title }}</div>
+        <div class="header-close" (click)="remove()"><i class="fas fa-times"></i></div>
+    </div>
+    <div class="d-flex card-body">
+        <div class="d-flex justify-content-center align-items-center product-preview">
+            <img #productImage [src]="" />
+        </div>
+        <div class="d-flex flex-grow-1 flex-column justify-content-center">
+            <div class="offer-name">{{ offer.localizationId }}</div>
+            <div class="offer-quantity" *ngIf="quantity">X {{ quantity }}</div>
+            <div class="badge badge-secondary" *ngIf="costCredits"><i class="icon icon-currency--1"></i> {{ costCredits }}</div>
+            <div class="badge badge-secondary" *ngIf="costPoints"><i class="icon icon-currency-{{ pointsType }}"></i> {{ costPoints }}</div>
+        </div>
+    </div>
+    <div class="card-footer">
+        <div class="button-container btn-group">
+            <button type="button" class="btn btn-primary" (click)="confirm()">Confirm</button>
+            <button *ngIf="options.closeButton" type="button" class="btn btn-primary" (click)="remove()">Cancel</button>
+        </div>
+    </div>
+</div>

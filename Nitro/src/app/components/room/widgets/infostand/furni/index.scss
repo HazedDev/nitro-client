@@ -1,0 +1,25 @@
+.nitro-room-infostand-furni-component {
+    visibility: hidden;
+
+    .card {
+
+        .card-body {
+
+            .body-image {
+                background: transparent;
+            }
+
+            .furni-description {
+                margin: 0;
+                padding: 10px 0;
+                font-size: 12px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .button-container {
+        padding: 10px 0;
+    }
+}
